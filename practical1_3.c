@@ -16,7 +16,6 @@ void main() {
     scanf("%f", &a);
 
 
-  
     x=(60*z*y)/(a*(100+y));
 
     printf("\n\nThe Speed of the Car is %d Kmph",x);

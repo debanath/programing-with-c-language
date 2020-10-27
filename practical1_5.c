@@ -16,4 +16,4 @@ int main()
     anb = 1/anb;
     printf("A and B will do the same work in: %0.2f Days",anb);
     return 0;
-};
+}

@@ -14,7 +14,7 @@ void main() {
 
     printf("\nSohan took a loan of __ rupees at an interst rate of __ and for __ year\n");
     scanf("%f %d %d",&z,&q,&t3);    
- 
+
 
     /*Using formula SI = PRT/100
     we'll find the SI that ram, mohan and sohan has to pay*/
@@ -24,6 +24,6 @@ void main() {
     SIy = y*p*t2/100;
     SIz = z*q*t3/100;
 
- SIx>SIy?(SIx>SIz?printf("Ram paid the most amount"):printf("Sohan paid the Most")):(SIy>SIz?printf("Mohan paid the most") : printf("Sohan paid the most")) ; 
- 
+SIx>SIy?(SIx>SIz?printf("Ram paid the most amount"):printf("Sohan paid the Most")):(SIy>SIz?printf("Mohan paid the most") : printf("Sohan paid the most")) ; 
+
 }
