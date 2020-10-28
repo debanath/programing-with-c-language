@@ -6,9 +6,11 @@ int main()
     int a;
     printf("enter int \n");
     scanf("%d", &a);
+
     float b ;
     printf("enter float \n");
     scanf("%f",&b);
+    
     char x;
     printf("enter char \n");
     scanf("%c",&x);
