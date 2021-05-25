@@ -1,33 +1,37 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
-void main () {
-
-    char name[25];
-    int age;
-    long ph_no;
-    float percent;
-
-    printf("Enter your name in Block Letters \n");
-    scanf("%[^\n]s", &name);
-
-    printf("Enter your age\n");
-    scanf("%d", &age);
-
-    printf("Enter your contact number\n");
-    scanf("%ld", &ph_no);
-
-    printf("Percentage Obtained in Metric Class\n");
-    scanf("%f", &percent);
-    printf("\n\n\n");
-
-
-    printf("*******************STUDENT DATABASE********************\n\n");
-    printf("Name                : %s\n", name);
-    printf("Age                 : %d\n", age);
-    printf("Contact Number      : %ld\n", ph_no);
-    printf("Percentage in Metric: %2.2f\n", percent);
-    printf("Thank you. Your data has been saved in our system\n\n");
-    printf("*******************************************************");
-
-
+int main()
+{
+    char str[50];
+    int i, l, d = 0, lc = 0, uc = 0, s = 0, count = 0;
+    printf("Enter string : \n");
+    scanf("%[^\n]s", str);
+    l = strlen(str);
+    for (i = 0; i < l; i++)
+    {
+        if (!isdigit(str[i]))
+            d += 1;
+        if (!islower(str[i]))
+            lc += 1;
+        if (!isupper(str[i]))
+            uc += 1;
+        if (!(str[i] == '!' || str[i] == '@' || str[i] == '#' || str[i] == '$' || str[i] == '%' || str[i] == '^' || str[i] == '&' || str[i] == '*' || str[i] == '(' || str[i] == ')' || str[i] == '-' || str[i] == '+'))
+            s += 1;
+    }
+    if (d == l)
+        count += 1;
+    if (lc == l)
+        count += 1;
+    if (uc == l)
+        count += 1;
+    if (s == l)
+        count += 1;
+    if (count > 6 - l)
+        printf("Password is strong with %d number of characters", l);
+    else
+        printf("Number of characters needs to be added are: %d", 6 - l);
+    return 0;
 }

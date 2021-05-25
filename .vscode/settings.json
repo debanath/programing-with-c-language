@@ -1,3 +1,15 @@
 {
-    "git.ignoreLimitWarning": true  
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "*.tcc": "c",
+        "functional": "cpp",
+        "random": "cpp",
+        "limits": "cpp",
+        "algorithm": "cpp",
+        "istream": "cpp",
+        "numeric": "cpp",
+        "streambuf": "cpp",
+        "type_traits": "cpp",
+        "iostream": "cpp"
+    }
 } 

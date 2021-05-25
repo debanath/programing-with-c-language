@@ -1,6 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 
-void main () {
+void main()
+{
 
     char name[25];
     int age;
@@ -24,8 +25,7 @@ void main () {
     printf("Name                : %s\n", name);
     printf("Age                 : %d\n", age);
     printf("Contact Number      : %lld\n", ph_no);
-    printf("Percentage in Metric: %2.2f\n", percent);
+    printf("Percentage in Metric: %.2f\n", percent);
     printf("Thank you. Your data has been saved in our system\n\n");
     printf("*******************************************************");
-
 }
